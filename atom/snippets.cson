@@ -38,6 +38,24 @@
             }
 
         """
+    'ngFactory':
+        'prefix': 'ngfactory'
+        'body': """
+            "use strict";
+
+            angular
+                .module("${1:module}")
+                .factory("${2:factory}", ${2:factory}Fn);
+
+            function ${2:factory}Fn() {
+                var ${2:factory} = {};
+                return ${2:factory};
+            }
+
+        """
     'Console log':
        'prefix': 'cl'
        'body': 'console.log($1);'
+    'use strict':
+        'prefix': 'use'
+        'body': '"use strict";'

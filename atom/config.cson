@@ -4,12 +4,13 @@
   editor:
     fontSize: 12
     showIndentGuide: true
-    preferredLineLength: 150
     softWrap: true
     softWrapAtPreferredLineLength: true
     invisibles: {}
     tabLength: 4
     softTabs: false
+    preferredLineLength: 125
+    fontFamily: "Hack"
   core:
     disabledPackages: [
       "language-objective-c"
@@ -30,7 +31,6 @@
       "spell-check"
       "welcome"
       "autocomplete"
-      "vim-mode"
       "open-on-github"
       "language-todo"
       "package-generator"
@@ -43,7 +43,8 @@
       "language-javascript"
       "language-javascript-semantic"
       "esformatter"
-      "linter-jsonlint"
+      "vim-mode"
+      "linter-scss-lint"
     ]
     themes: [
       "unity-ui"
@@ -76,12 +77,13 @@
     css_newline_between_rules: true
     css_force_indentation: true
     css_selector_separator_newline: true
-    css_indent_size: 1
-    css_indent_char: "\t"
   "atom-ternjs":
     useSnippetsAndFunction: true
   "linter-eslint":
-    showRuleIdInMessage: true
+    showRuleIdInMessage: false
+    useGlobalEslint: true
+    disableWhenNoEslintrcFileInPath: true
+    globalNodePath: "/usr/local/"
   "markdown-preview": {}
   "linter-htmlhint": {}
   tabs:
@@ -95,3 +97,10 @@
     lightTheme: true
     highlightBackground: true
     hideHighlightOnSelectedWord: true
+  "merge-conflicts":
+    gitPath: "/usr/bin/git"
+  minimap:
+    plugins:
+      "highlight-selected": true
+  "symbols-tree-view":
+    autoToggle: true
