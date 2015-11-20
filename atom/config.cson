@@ -11,6 +11,8 @@
     softTabs: false
     preferredLineLength: 125
     fontFamily: "Hack"
+    showInvisibles: true
+    tabType: "hard"
   core:
     disabledPackages: [
       "language-objective-c"
@@ -81,7 +83,6 @@
     useSnippetsAndFunction: true
   "linter-eslint":
     showRuleIdInMessage: false
-    useGlobalEslint: true
     disableWhenNoEslintrcFileInPath: true
     globalNodePath: "/usr/local/"
   "markdown-preview": {}
