@@ -53,9 +53,32 @@
             }
 
         """
+    'ngComponent':
+        'prefix': 'ngcomponent'
+        'body': """
+            "use strict";
+
+            angular
+                .module("${1:module}")
+                .component("${2:component}", {
+                    template: "<div></div>",
+                    bindings: {
+                        foo: "<"
+                    },
+                });
+        """
     'Console log':
        'prefix': 'cl'
        'body': 'console.log($1);'
     'use strict':
         'prefix': 'use'
         'body': '"use strict";'
+'.source.xml':
+    'ui5 xml view':
+        'prefix': 'ui5view'
+        'body': """
+            <mvc:View
+                xmlns="sap.m"
+                xmlns:mvc="sap.ui.core.mvc">
+            </mvc:View>
+            """

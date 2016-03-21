@@ -1,23 +1,27 @@
 "*":
-  welcome:
-    showOnStartup: false
-  editor:
-    fontSize: 12
-    showIndentGuide: true
-    softWrap: true
-    softWrapAtPreferredLineLength: true
-    invisibles: {}
-    tabLength: 4
-    softTabs: false
-    preferredLineLength: 125
-    fontFamily: "Hack"
-    showInvisibles: true
-    tabType: "hard"
+  "atom-beautify":
+    _analyticsUserId: "d79fd0fd-009a-4910-aa84-923d192c4d65"
+    analytics: false
+    css_convert_quotes: "double"
+    css_force_indentation: true
+    css_newline_between_rules: true
+    css_selector_separator_newline: true
+    html_end_with_newline: true
+    html_wrap_attributes: "force"
+    js_break_chained_methods: true
+    js_end_with_newline: true
+    js_indent_with_tabs: false
+    js_space_after_anon_function: true
+    language_xml_default_beautifier: "JS Beautify"
+  "atom-ternjs":
+    useSnippetsAndFunction: true
+  "autocomplete-plus":
+    confirmCompletion: "enter"
   core:
+    audioBeep: false
     disabledPackages: [
       "language-objective-c"
       "background-tips"
-      "bookmarks"
       "exception-reporting"
       "language-clojure"
       "language-go"
@@ -39,69 +43,74 @@
       "language-csharp"
       "timecop"
       "image-view"
-      "go-to-line"
       "deprecation-cop"
       "jsformat"
       "language-javascript"
       "language-javascript-semantic"
       "esformatter"
       "vim-mode"
-      "linter-scss-lint"
     ]
     themes: [
-      "unity-ui"
+      "native-ui"
       "solarized-light-syntax"
     ]
-    audioBeep: false
+  editor:
+    fontFamily: "Hack"
+    fontSize: 12
+    invisibles: {}
+    preferredLineLength: 125
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+    tabType: "soft"
+  emmet: {}
+  "file-icons":
+    forceShow: true
+    onChanges: true
+  "fuzzy-finder":
+    ignoredNames: [
+      "target/*"
+      "*.java"
+      "node_modules/*"
+    ]
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+    highlightBackground: true
+    lightTheme: true
+  jsformat: {}
   linter:
     subtleLinterErrors: [
       "htmlhint"
     ]
-  "file-icons":
-    forceShow: true
-    onChanges: true
-  "autocomplete-plus":
-    confirmCompletion: "enter"
-  jsformat: {}
-  "unity-ui":
-    allowTreeViewToScrollHorizontally: true
-    colorStatusIndicatorsInTreeView: true
-    showIcons: true
-  emmet: {}
-  "atom-beautify":
-    _analyticsUserId: "d79fd0fd-009a-4910-aa84-923d192c4d65"
-    analytics: false
-    html_end_with_newline: true
-    js_indent_with_tabs: true
-    js_space_after_anon_function: true
-    js_end_with_newline: true
-    css_convert_quotes: "double"
-    css_newline_between_rules: true
-    css_force_indentation: true
-    css_selector_separator_newline: true
-  "atom-ternjs":
-    useSnippetsAndFunction: true
   "linter-eslint":
-    showRuleIdInMessage: false
     disableWhenNoEslintrcFileInPath: true
+    eslintRulesDir: ".eslintrules"
     globalNodePath: "/usr/local/"
-  "markdown-preview": {}
+    showRuleIdInMessage: false
   "linter-htmlhint": {}
-  tabs:
-    usePreviewTabs: true
-    enableVcsColoring: true
   "linter-jsonlint": {}
-  pigments:
-    markerType: "square-dot"
   "linter-scss-lint": {}
-  "highlight-selected":
-    lightTheme: true
-    highlightBackground: true
-    hideHighlightOnSelectedWord: true
+  "markdown-preview": {}
   "merge-conflicts":
     gitPath: "/usr/bin/git"
   minimap:
     plugins:
       "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  pigments:
+    markerType: "square-dot"
   "symbols-tree-view":
     autoToggle: true
+  tabs:
+    enableVcsColoring: true
+    usePreviewTabs: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "unity-ui":
+    allowTreeViewToScrollHorizontally: true
+    colorStatusIndicatorsInTreeView: true
+    showIcons: true
+  welcome:
+    showOnStartup: false
